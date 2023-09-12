@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTechCalc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('./assets/HealthTechCalc.png'); /* Cambia 'tu-imagen-de-fondo.jpg' por la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #333;
+            margin: 0; /* Elimina el margen predeterminado del cuerpo */
+            padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra al contenedor */
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .result {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Responsiveness */
+        @media screen and (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Calculadora de Peso</h1>
+    <div class="container">
+        <form id="calculator-form">
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" name="weight" required><br>
+
+            <label for="height">Altura (m):</label>
+            <input type="number" id="height" name="height" required><br>
+
+            <button type="button" id="calculate-button">Calcular Peso</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById("calculate-button").addEventListener("click", function () {
+            const weight = parseFloat(document.getElementById("weight").value);
+            const height = parseFloat(document.getElementById("height").value);
+
+            if (!isNaN(weight) && !isNaN(height) && height > 0) {
+                const bmi = weight / (height * height);
+                let message = "";
+
+                if (bmi < 18.5) {
+                    message = "Peso insuficiente";
+                } else if (bmi < 24.9) {
+                    message = "Peso saludable";
+                } else if (bmi < 29.9) {
+                    message = "Sobrepeso";
+                } else {
+                    message = "Obesidad";
+                }
+
+                document.getElementById("result").textContent = `Tu estado de peso es ${bmi.toFixed(2)}. ${message}`;
+                document.getElementById("result").style.animation = "fadeIn 2s";
+            } else {
+                document.getElementById("result").textContent = "Por favor, introduce valores válidos.";
+            }
+        });
+    </script>
+</body>
+</html>

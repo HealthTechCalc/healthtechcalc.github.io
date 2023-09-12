@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthTechCAlc</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- google font -->
+  <!-- boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- boxicons -->
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <header>
+    <div class="container">
+      <div class="header__content" id="header__content">
+        <button class="btn-open-menu" id="btn-open-menu">
+          <i class="bx bx-menu"></i>
+        </button>
+        <div class="header__logo">
+          <img src="./assets/menta.png" alt="logo">
+        </div>
+        <nav>
+          <button class="btn-close-menu" id="btn-close-menu">
+            <i class="bx bx-left-arrow-alt"></i>
+          </button>
+          <ul>
+            <li>
+              <a href="#">Farmacias</a>
+            </li>
+            <li>
+              <a href="./imc.html">Calculo de peso</a>
+            </li>
+            <li>
+              <a href="#">Guias</a>
+            </li>
+            <li>
+              <a href="#">Ubicaciones</a>
+            </li>
+            <li>
+              <a href="#">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__menu">
+          <ul>
+            <li>
+              <a href="#">Buscar</a>
+            </li>
+            <li>
+              <a href="#">Carrito</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header -->
+
+  <!-- hero slider -->
+  <section>
+    <div class="hero">
+      <div class="swiper hero__swiper">
+        <div class="swiper-wrapper">
+          <!-- slide item -->
+          <div class="swiper-slide">
+            <div class="hero__bg bg-image"
+              style="background-image: url(./assets/bg/post_gut_microbiota_personalised_nutrition.jpg);"></div>
+            <div class="container">
+              <div class="hero__content">
+                <div class="hero__txt">
+                  <h2>Nutricion</h2>
+                  <p>Nos dedicamos a proporcionar los productos y asesoramiento necesarios para llevar un estilo de vida saludable.
+                    Ya sea que estés buscando aumentar tu energía, mejorar tu rendimiento deportivo o simplemente llevar una vida más saludable, estamos aquí para apoyarte en tu viaje hacia una mejor nutrición y bienestar.</p>
+                  <button class="btn">Me interesa</button>
+                </div>
+                <div class="hero__img">
+                  <img src="./assets/products/nutricion.png" alt="product image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slide item -->
+          <!-- slide item -->
+          <div class="swiper-slide">
+            <div class="hero__bg bg-image"
+              style="background-image: url(./assets/bg/banner-beauty-icon.png);"></div>
+            <div class="container">
+              <div class="hero__content">
+                <div class="hero__txt">
+                  <h2>Cuidado personal</h2>
+                  <p>Contamos con un equipo de expertos en cuidado personal que te brindará asesoramiento personalizado para ayudarte a lucir y sentirte mejor. Ya sea que estés buscando productos para el cuidado diario o tratamientos especiales, estamos aquí para ayudarte a resaltar tu belleza natural y cuidar de ti mismo.</p>
+                  <button class="btn">Me interesa</button>
+                </div>
+                <div class="hero__img">
+                  <img src="./assets/products/cuidado-personal.png" alt="product image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slide item -->
+          <!-- slide item -->
+          <div class="swiper-slide">
+            <div class="hero__bg bg-image"
+              style="background-image: url(./assets/bg/sherise-van-dyk-nS3HSEBrcik-unsplash.jpg);"></div>
+            <div class="container">
+              <div class="hero__content">
+                <div class="hero__txt">
+                  <h2>Ejercicio</h2>
+                  <p>Nos apasiona ayudarte a alcanzar tus objetivos de salud y bienestar físico. Ofrecemos una amplia variedad de equipos de fitness, desde pesas y máquinas cardiovasculares hasta accesorios de entrenamiento y ropa deportiva de alta calidad</p>
+                  <button class="btn">Me interesa</button>
+                </div>
+                <div class="hero__img">
+                  <img src="./assets/products/dumbbells_gym_fitness_sport_icon_187014.png" alt="product image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slide item -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!-- hero slider -->
+
+  <!-- top products -->
+  <section>
+    <div class="container">
+      <div class="top-product__header">
+        <h2 class="section__title no-margin">
+          Productos Top
+        </h2>
+        <div class="top-product__swiper__btn" id="top-product__swiper__btn">
+          <div class="swiper-button btn-prev">
+            <i class="bx bx-chevron-left"></i>
+          </div>
+          <div class="swiper-button btn-next">
+            <i class="bx bx-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="swiper top-product__swiper">
+        <div class="swiper-wrapper">
+          <!-- slide item -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product__image">
+                <img src="./assets/products/aripirazol-x-15mg.webp" alt="product image">
+              </div>
+              <div class="product__info">
+                <h5 class="product__name">Aripiprazol</h5>
+                <span class="product__price">$ 10</span>
+              </div>
+            </div>
+          </div>
+          <!-- slide item -->
+          <!-- slide item -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product__image">
+                <img src="./assets/products/musclemeds-carnivor-4lb.jpg" alt="product image">
+              </div>
+              <div class="product__info">
+                <h5 class="product__name">Carnivor</h5>
+                <span class="product__price">$ 123</span>
+              </div>
+            </div>
+          </div>
+          <!-- slide item -->
+          <!-- slide item -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product__image">
+                <img src="./assets/products/mancuerna-telstar-30-libras-tme030110rf-met_lico-negro-167961.webp" alt="product image">
+              </div>
+              <div class="product__info">
+                <h5 class="product__name">Mancuerna telstar 30 libras</h5>
+                <span class="product__price">$ 80</span>
+              </div>
+            </div>
+          </div>
+          <!-- slide item -->
+          <!-- slide item -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product__image">
+                <img src="./assets/products/salud-mental-alimentos-y-bebidas-para-aliviar-el-estres-y-dormir-mejor-duas-rodas-blue-spark-1.jpg" alt="product image">
+              </div>
+              <div class="product__info">
+                <h5 class="product__name">Blue spark</h5>
+                <span class="product__price">$ 5</span>
+              </div>
+            </div>
+          </div>
+          <!-- slide item -->
+          <!-- slide item -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <div class="product__image">
+                <img src="./assets/products/book.jpg" alt="product image">
+              </div>
+              <div class="product__info">
+                <h5 class="product__name">Libro Autoayuda</h5>
+                <span class="product__price">$ 7</span>
+              </div>
+            </div>
+          </div>
+          <!-- slide item -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- top products -->
+
+  <!-- category banner -->
+  <section>
+    <div class="container">
+      <h2 class="section__title">Guias Trending</h2>
+      <div class="category__grid">
+        <!-- item -->
+        <div class="category__item category__top">
+          <div class="category__banner bg-image"
+            style="background-image: url(./assets/bg/siento_una_bolita_en_mi_vientre_estare_embarazada_5409_orig.jpg);"></div>
+          <div class="category__overlay"></div>
+          <div class="category__border"></div>
+          <div class="category__txt">Guia para bajar de peso</div>
+        </div>
+        <!-- item -->
+        <!-- item -->
+        <div class="category__item category__left">
+          <div class="category__banner bg-image"
+            style="background-image: url(./assets/bg/hombre-joven-guapo-pensativo-haciendo-eleccion-mira-esquina-superior-izquierda-promocion-pensando.jpg);"></div>
+          <div class="category__overlay"></div>
+          <div class="category__border"></div>
+          <div class="category__txt">Guía de Resolución de Problemas</div>
+        </div>
+        <!-- item -->
+        <!-- item -->
+        <div class="category__item category__right">
+          <div class="category__banner bg-image"
+            style="background-image: url(./assets/bg/chica-maquillandose-bano.jpg);"></div>
+          <div class="category__overlay"></div>
+          <div class="category__border"></div>
+          <div class="category__txt">Guía de Maquillaje y Belleza</div>
+        </div>
+        <!-- item -->
+      </div>
+    </div>
+  </section>
+  <!-- category banner -->
+
+
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer__col">
+          <a href="#" class="logo">
+            <img src="./assets/menta.png" alt="logo">
+          </a>
+          <div class="social-list">
+            <a href="#">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <div class="footer__header">info</div>
+          <ul class="footer__menu">
+            <li>
+              <a href="#">Encontrar una tienda</a>
+            </li>
+            <li>
+              <a href="#">Descuentos</a>
+            </li>
+            <li>
+              <a href="#">Regalias</a>
+            </li>
+            <li>
+              <a href="#">Feedback</a>
+            </li>
+            <li>
+              <a href="#">Agregar un producto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__header">Tienda</div>
+          <ul class="footer__menu">
+            <li>
+              <a href="#">Suplementos</a>
+            </li>
+            <li>
+              <a href="#">Mujer</a>
+            </li>
+            <li>
+              <a href="#">Niños</a>
+            </li>
+            <li>
+              <a href="#">Colecciones</a>
+            </li>
+            <li>
+              <a href="#">Entrenadores</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__header">Acerca de </div>
+          <ul class="footer__menu">
+            <li>
+              <a href="#">Noticias</a>
+            </li>
+            <li>
+              <a href="#">Quienes somos?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- swiper -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
